@@ -4,6 +4,7 @@
   "edition": "Developer",
   "features": [
     "SUSTAINABILITYCLOUD",
+    "EnableSetPasswordInApi",
     "AnalyticsAdminPerms",
     "DevelopmentWave",
     "EinsteinAnalyticsPlus"
@@ -20,11 +21,6 @@
     },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
-    },
-    "securitySettings": {
-      "passwordPolicies": {
-        "enableSetPasswordInApi": true
-      }
     }
   }
 }
