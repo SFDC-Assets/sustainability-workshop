@@ -54,7 +54,7 @@
         <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
-    <description>Console layout. Sustainability Cloud helps you measure and report on your organization&#39;s greenhouse gas footprint</description>
+    <description>Console layout. Sustainability Cloud helps you measure and report on your organization&apos;s greenhouse gas footprint</description>
     <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
@@ -66,9 +66,10 @@
     <tabs>sustain_app__ConsumptionReport__c</tabs>
     <tabs>sustain_app__EnergyConsumption__c</tabs>
     <tabs>sustain_app__Asset__c</tabs>
-    <tabs>sustain_app__Contact__c</tabs>
+    <tabs>sustain_app__Scope3Hub</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>sustain_app__Contact__c</tabs>
     <tabs>standard-Feed</tabs>
     <tabs>sustain_app__ServiceProvider__c</tabs>
     <tabs>sustain_app__Contract__c</tabs>
@@ -76,6 +77,9 @@
     <tabs>sustain_app__EmissionFactorElectricity__c</tabs>
     <tabs>sustain_app__EmissionFactorOther__c</tabs>
     <tabs>sustain_app__EmissionFactorScope3__c</tabs>
+    <tabs>sustain_app__EmissionFactorScope3Dataset__c</tabs>
+    <tabs>sustain_app__ProcurementDataset__c</tabs>
+    <tabs>sustain_app__ProcurementEntry__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Sustainability_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -114,6 +118,9 @@
             <tab>sustain_app__EmissionFactorOther__c</tab>
         </mappings>
         <mappings>
+            <tab>sustain_app__EmissionFactorScope3Dataset__c</tab>
+        </mappings>
+        <mappings>
             <tab>sustain_app__EmissionFactorScope3__c</tab>
         </mappings>
         <mappings>
@@ -121,6 +128,15 @@
         </mappings>
         <mappings>
             <tab>sustain_app__ExtrapolationLog__c</tab>
+        </mappings>
+        <mappings>
+            <tab>sustain_app__ProcurementDataset__c</tab>
+        </mappings>
+        <mappings>
+            <tab>sustain_app__ProcurementEntry__c</tab>
+        </mappings>
+        <mappings>
+            <tab>sustain_app__Scope3Hub</tab>
         </mappings>
         <mappings>
             <tab>sustain_app__ServiceProvider__c</tab>

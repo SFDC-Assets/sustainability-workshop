@@ -1,4 +1,4 @@
-sfdx force:org:create -f config/project-scratch-def.json -d 1 -s
+sfdx force:org:create -f config/project-scratch-def.json -d 1 -s -a sustainabilityref2
 # https://login.salesforce.com/packaging/installPackage.apexp?p0=04t3k000001YOKKAA4
 sfdx force:package:install --package 04t3k000001YOKKAA4 -w 20
 
@@ -13,7 +13,8 @@ sfdx shane:user:psl -l User -g Integration -n InsightsBuilderPsl
 sfdx shane:user:permset:assign -l User -g Integration -n EinsteinAnalyticsUser
 sfdx shane:user:permset:assign -l User -g Integration -n SustainabilityAnalytics
 
-sfdx automig:load -d data --concise --mappingobjects RecordType:DeveloperName
+sfdx automig:load -d automig --concise --mappingobjects RecordType:DeveloperName
+#sfdx automig:load -d data --concise --mappingobjects RecordType:DeveloperName
 
 sfdx analytics:app:create -f assets/analyticsAppCreateDef.json -w 60
 sfdx shane:analytics:app:share -n Sustainability --org
