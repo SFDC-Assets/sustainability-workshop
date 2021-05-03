@@ -1,6 +1,6 @@
 sfdx force:org:create -f config/project-scratch-def.json -d 1 -s -a sustainabilityref2
 # https://login.salesforce.com/packaging/installPackage.apexp?p0=04t3k000001YOKKAA4
-sfdx force:package:install --package 04t3k000001YOKKAA4 -w 20
+sfdx force:package:install --package 04t3k0000027CZ1AAM -w 20
 
 
 # Special perm/license stuff for SustCloud
