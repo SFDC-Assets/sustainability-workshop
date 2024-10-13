@@ -4,14 +4,14 @@ sf package install --package 04t3k0000027CZ1AAM -w 20
 
 
 # Special perm/license stuff for SustCloud
-sfdx shane:user:psl -l User -g User -n sustain_app_SustainabilityCloudPsl
+sf org assign permset-n sustain_app_SustainabilityCloudPsl
 sf org assign permset -n SustainabilityAnalytics
 sf org assign permset -n SustainabilityAppAuditor
 sf org assign permset -n SustainabilityAppManager
 sf org assign permset -n SustainabilityCloud
-sfdx shane:user:psl -l User -g Integration -n InsightsBuilderPsl
-sf org assign permset -l User -g Integration -n EinsteinAnalyticsUser
-sf org assign permset -l User -g Integration -n SustainabilityAnalytics
+sf org assign permset -b integ -n InsightsBuilderPsl
+sf org assign permset -b integ -n EinsteinAnalyticsUser
+sf org assign permset -b integ -n SustainabilityAnalytics
 
 sf automig load -d automig --concise --mappingobjects RecordType:DeveloperName
 #sfdx automig:load -d data --concise --mappingobjects RecordType:DeveloperName
